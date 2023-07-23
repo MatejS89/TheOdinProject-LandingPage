@@ -4,26 +4,28 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
+  padding: 0;
 }
 
 body > * > * {
-  max-width: 50%;
+  max-width: 60vw;
 }
 
 .top {
   align-items: center;
   background-color: #1f2937;
   display: flex;
-  flex: 1;
+  flex: 1 1 100%;
   flex-direction: column;
-  padding: 10px;
-  width: 100vw;
+  padding: 10px 0 70px 0;
+  width: 100%;
 }
 
 .top-container {
   display: flex;
   flex: 1;
   flex-direction: column;
+  gap: 50px;
   justify-content: space-between;
 }
 
@@ -70,12 +72,80 @@ body > * > * {
 .top-content button {
   background-color: #3882f6;
   border-radius: 5px;
+  border-width: 0;
   color: #e5e7eb;
   margin-top: 10px;
   padding: 7px 20px;
 }
 
 .top-content > .image {
-  flex: 1 0 400px;
   background-color: grey;
+  flex: 1 0 400px;
+}
+
+.info {
+  align-items: center;
+  display: flex;
+  flex: 1 1 100vw;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.info-header {
+  color: #1f2937;
+  display: flex;
+  flex: 1 1;
+  font-size: 36px;
+  font-weight: 3000;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.card > .rounded-rect {
+  border: 4px solid #3882f6;
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.quote {
+  align-items: center;
+  background-color: #e5e7eb;
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: center;
+  padding: 100px 0;
+  width: 100%;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-text {
+  color: #1f2937;
+  font: 36px light italic;
+}
+
+.quote-signature {
+  align-self: flex-end;
 }
